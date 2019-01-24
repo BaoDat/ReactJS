@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './style/Home.css'
 
 export default class Option extends Component {
     constructor(props){
@@ -13,7 +12,7 @@ export default class Option extends Component {
       }
   render() {
     return (
-        <select className="timebar form-control form-control-sm  " name="picktime" onChange={this._handleChange} >
+        <select className={this.props.className} name="picktime" onChange={this._handleChange} >
             <option  value="00:00" >00:00</option>
             <option  value="01:00" >01:00</option>
             <option  value="02:00" >02:00</option>

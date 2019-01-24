@@ -1,17 +1,19 @@
+.App-header {
+  background-image: url('../../../assets//imgs/harley-davidson-motorcycle.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
 .card {
     opacity: 0.8;
     margin-bottom: 20%
 }
-
-/* 
-.card-body {
-    flex: 1 1 auto;
-    padding: 1.25rem;
-} */
-
-/* .card-title {
-    margin-bottom: 0.75rem;
-} */
 
 h5 {
     font-size: 1.25rem;

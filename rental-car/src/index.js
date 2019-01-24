@@ -7,11 +7,20 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import {Provider} from 'react-redux'
+import {createStore, applyMiddleware} from 'redux'
+import {BrowserRouter} from 'react-router-dom'
+import reducers from './reducers'
+import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const createStoreWithMiddleware = applyMiddleware()(createStore)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+ReactDOM.render(
+    <Provider store={createStoreWithMiddleware(reducers)}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>, 
+    document.getElementById('root'));
+
