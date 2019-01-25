@@ -6,7 +6,12 @@
     bottom: 0;
 }
 
+.image{
+    margin-left: 5%
+}
+
 h2.nav-header-text {
+    text-align: center;
     margin: auto;
     position: absolute;
     left: 0;
@@ -57,3 +62,23 @@ p {
     margin-right: 8px;
     height:38px
 }
+
+.content{
+    margin-left: 15px
+}
+
+.content-left{
+    flex: 0 0 25%;
+    max-width: 24%;
+    padding-left: 0px;
+}
+
+.content-form{
+    margin-left: 50px
+}
+
+.content-text{
+    color: #3162ff;
+    margin-bottom: 5%
+}
+

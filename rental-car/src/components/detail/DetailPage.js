@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './style/DetailPage.css'
 import car from '../../assets/imgs/XXAR_800x400.png'
 import Select from '../home/Option'
+import Content from './DetailPage_Content'
 
 export default class DetailPage extends Component {
   constructor(props) {
@@ -17,10 +18,10 @@ export default class DetailPage extends Component {
 }
   render() {
     return (
-      <nav>
+      <div>
         <nav className="navbar navbar-light bg-light">
           <a  className="navbar-brand nav-header" href="/" >
-            <img alt="" src={car} height="15%" width="15%"/>
+            <img className="image" alt="" src={car} height="15%" width="15%"/>
           </a>
           <h2 className="nav-header-text">Rental Car and Motorbike</h2>
         </nav>
@@ -43,7 +44,9 @@ export default class DetailPage extends Component {
             </nav>
           </form>
         </nav>
-      </nav>
+
+        <Content/> 
+      </div>
     )
   }
 }

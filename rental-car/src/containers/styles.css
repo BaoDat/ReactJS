@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+}
+
+
+#card {
+    background: rgb(255, 255, 255);
+    flex-direction: row;
+    border: 1px solid #eee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+#main_row {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#image {
+    height: 100px;
+    width: 250px;
+    margin-left: -7%
+}
